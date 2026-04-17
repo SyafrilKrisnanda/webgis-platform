@@ -173,17 +173,18 @@
 
 #### Issue #17: [MVP][Security][Backend][API][Auth] Hardening Keamanan API dan Validasi Upload
 
-- **Status**: 🟡 IN PROGRESS (Started 2026-04-17)
+- **Status**: 🟡 IN PROGRESS (Updated 2026-04-17)
 - **Agent**: `webgis-security-reviewer`
 - **Parallel With**: Backend work
 - **Est. Duration**: 1.5 days
+- **Notes**: CORS + rate limit middleware siap, batas upload dan checklist dokumentasi siap. Validator upload sudah dibuat, perlu wiring di endpoint upload.
 - **AC**:
   - [ ] Validasi extension & MIME (upload)
-  - [ ] Batas ukuran upload diterapkan
-  - [ ] Throttling auth & upload endpoints
+  - [x] Batas ukuran upload diterapkan
+  - [x] Throttling auth & upload endpoints
   - [ ] Object-level permission enforcement
-  - [ ] CORS whitelist & env-based settings
-  - [ ] Security checklist dokumentasi
+  - [x] CORS whitelist & env-based settings
+  - [x] Security checklist dokumentasi
 
 #### Issue #18: [MVP][DevOps] CI Pipeline, Build Check, dan Packaging Deployment Docker
 
