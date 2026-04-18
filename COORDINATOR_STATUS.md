@@ -53,18 +53,18 @@
 
 #### Issue #9: [MVP][Backend][API][GIS] Bootstrap Django, DRF, GeoDjango, dan Konfigurasi PostGIS
 
-- **Status**: 🟡 IN PROGRESS (Updated 2026-04-17)
+- **Status**: ✅ DONE (Validated 2026-04-17)
 - **Agent**: `webgis-architect`
-- **Last Update**: 2026-04-17 18:08 UTC
-- **Notes**: Fix blocker backend jwt dependency (PyJWT), rebuild backend image, dan verifikasi smoke test: db/backend/frontend healthy; /health, /api/posts/_, CORS, dan route frontend /posts/_ merespons 200.
+- **Last Update**: 2026-04-17 11:38 UTC
+- **Notes**: DRF + GeoDjango aktif, backend engine PostGIS berjalan, migration `core.0001_enable_postgis_extension` applied, backend image sudah rebuild (termasuk dependency geospatial), endpoint `/health/` dan `/api/health/` merespons 200 dengan `postgis_version`, CORS preflight origin frontend valid, dan smoke test endpoint sample (`/api/posts/1/`, `/api/posts/1/layers/`, `/api/layers/101/features/`) semuanya 200.
 - **Blocking**: #11, #10, #12, #13 (critical path)
 - **Est. Duration**: 2 days
 - **AC**:
-  - [ ] Project Django dan app inti terbentuk
-  - [ ] DRF aktif dengan konfigurasi global
-  - [ ] GeoDjango terhubung ke PostGIS tanpa error
-  - [ ] Endpoint health API tersedia
-  - [ ] CORS dasar aktif
+  - [x] Project Django dan app inti terbentuk
+  - [x] DRF aktif dengan konfigurasi global
+  - [x] GeoDjango terhubung ke PostGIS tanpa error
+  - [x] Endpoint health API tersedia
+  - [x] CORS dasar aktif
 
 #### Issue #11: [MVP][Backend][GIS] Desain dan Implementasi Model Post, Dataset, Layer, dan Feature
 

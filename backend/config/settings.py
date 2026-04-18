@@ -87,6 +87,9 @@ REST_FRAMEWORK = {
     "DEFAULT_PARSER_CLASSES": [
         "rest_framework.parsers.JSONParser",
     ],
+    "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
+    "PAGE_SIZE": int(os.getenv("API_PAGE_SIZE", "20")),
+    "EXCEPTION_HANDLER": "core.drf.custom_exception_handler",
 }
 
 AUTH_PASSWORD_VALIDATORS = [

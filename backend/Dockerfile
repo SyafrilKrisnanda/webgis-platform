@@ -9,7 +9,11 @@ WORKDIR /app
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         build-essential \
+        binutils \
         libpq-dev \
+        libproj-dev \
+        gdal-bin \
+        libgdal-dev \
         curl \
         netcat-openbsd \
     && rm -rf /var/lib/apt/lists/*
